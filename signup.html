@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>NewsLetter Sign-Up</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+    <main class="form-signin">
+        <form action="/" method="post">
+            <img class="mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADDCAMAAACxkIT5AAAAclBMVEUAAAD///8KCgoFBQXGxsb39/dTU1PPz8+urq7p6eny8vLl5eUgICCamppaWlqjo6OOjo7d3d2/v79GRkZiYmIYGBg9PT2BgYFqamqQkJC5ubnV1dV1dXXJyckcHB0uLi5NTU17e3uGhoY0NDSen58mJibz9PEPAAAEgklEQVR4nO3b3XaiMBQFYOKgIooItv6h1Wr7/q9Y9zGhRG1nbjzHtWbvG6y6VpJPCSehJr3kf8+fhAY0oAFCAxogNKABQgMaIDSgAUIDGiA0oAFCAxogNKABQgMaIDSgAUIDGiA0oAFCAxogNKABQgMaIDSgAUIDGiA0oAFCAxogNKABQgMaIDSgAUIDGiA0oAFCAxogNKABQgMaIDSgAUIDGiA0oAFCAxog9gY96w48gcHcuP0nMHh7sW0/eQKDtW3ziLXB54dp8xJrg/rVtHmJscFiZ9m6j7FBNbBs3cfWYDAybLyNrcFoadh4G1ODlbNruxNTgzyza7sTS4OlezNruxtLAzeUw6gvcROrfhgaFE6WCivnY3ZiGBq4XA5VMDCbIO0MMifLpXlL4AqjnpgZTPznXn8b9G16YmeQug0OPdeJUcVkZbBwboFj2TUwqpytDBpXydFFsdlTMjKYOrfFcekHn18OjUVfrAzGfgIcXcaerr3FwqIzNgZb50ocp37o03BOpAadMTI4f/VlD23YzoXhEmmxtWZiMHNO9tD2fuDHJDn8WDAPBo9eSJgYyLc/Qan4XSSP7xXMp2JTPP4ejIVBGSqB7mcfrhBtwfy2TPvNVqM/BgYoDWd4EC4Ge3k6Kpi3m9zlhVLXDAw24RsfFwXhxFi+ZDgv6oNah/QNMBHKUiFsHKwuz0869WKlunLQN9idx3jCA79xkIcXmnA2ZHvdHqkbHMK3P2wcyCS4WPtSwQ1Xuv1JDAzw6ctsH6qiZH9M+/6x2jQYRdtgFab+sHGQj9pZoDa68aZtgBHL7fZo4+Cc8VG1H90oG0glJC3GApnJgtFH2QAnvqwNlx2Aq2pwUpaaXdI2KDBkOevbWSD/iJeK743T3mXXNcCgZakQNg7SePdsvulcL9WiaiDlsMx9Ug2MZ9GrvXX75dDdZdc0uFTDeCT1crwoXoUiSaKyXgzRNJCqSBbKdfUevXLK+i5KpdapRNVgIaOTtUC8IDhW7iYHrV4lqgayJrrZPR/UtwBOd3NVz+ByKYhXRK9FHo28n4V9Rc1/z9AzkA3DvPvMtokA3A5AO/+H4n8jqBlsry788ywGqPyFchCe0OkWomaQRwObjSOAvDy1bwxFgt4aSstgJuOq5fFLGn8F6untOzVvQmsZtFe8zzIuBZqbrcPwitpNaCWDy25BlSzjUiAv7kz/YaJQuwmtY+A3ja5qoc3h7ptP4XWtPQUdg427yfDnJUG2S5Gd1qyoYrC/BhivrX9J1o2KwS4C6JtunN2JhsG8K5Da/47tOhoG31NhZbd5/EsUDMJ9xbxUvof2r1EwuBS/cTH4VHm8AXbRm/e/v88ujzdwo+IJfsP4Wx5ucHiGX+/9HuvfuT5DaEADhAY0QGhAA4QGNEBoQAOEBjRAaEADhAY0QGhAA4QGNEBoQAOEBjRAaEADhAY0QGhAA4QGNEBoQAOEBjRAaEADhAY0QGhAA4QGNEBoQAOEBjRAaEADhAY0QGhAA4QGNEBoQAOEBjRAaEADhAY0QGhwNvgCNPMdzG9id1wAAAAASUVORK5CYII=" alt="" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
+
+            <div class="form-floating">
+                <input type="text" name="fname" class="form-control" placeholder="First Name" required autofocus>
+                <label for="floatingInput">First Name</label>
+
+            </div>
+            <div class="form-floating">
+                <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+                <label for="floatingInput">Last Name</label>
+
+            </div>
+            <div class="form-floating">
+                <input type="email" name="mail" class="form-control" placeholder="Email" required>
+                <label for="floatingInput">Email address</label>
+
+            </div>
+
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up!</button>
+
+        </form>
+    </main>
+
+
+
+</body>
+
+</html>
